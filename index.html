@@ -9,147 +9,53 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- CSS -->
-    <style>
-    
-    :root {
-    /* Define color scheme */
-    --color-light-theme   : #ffffff;
-    --color-dark-theme    : #666666;
-    --color-mint-green    : #4aaaa5;
-    --color-separator     : #d8d8d8;
-    --color-text          : #202020;
-    --color-text-highlight: #ff6600;
-    }
-
-    body {
-        background-color: var(--color-separator);
-        margin: 0px;
-        margin-bottom: 60px; /* Margin bottom by footer height */
-    }
-    
-    html {
-        position: relative;
-        min-height: 100%;
-    }
-
-
-    /* NavBar */
-   .navbar > ul li:not(:last-child) {
-        border-right:1px solid grey;
-        margin-right:10px;
-        padding-right:10px;
-    }
-
-    @media only screen and (min-width: 768px) {
-        #middle_con {
-        width: 80%;
-        }
-    }
-
-
-    #top_con  {
-    background-color: #ffffff;
-    }
-
-    #top_con > .navbar > .navbar-brand {
-        background-color: var(--color-mint-green) !important;
-        color: var(--color-light-theme) !important;
-        padding         : 22px 22px 22px 22px !important;
-        font-family     : "Georgia", "Times", "Times New Roman", serif;
-        font-size       : 1.9em;
-        font-weight     : bold;
-    }
-
-    #top_con > .navbar > .navbar-nav li a {
-        font-size: 1em;
-        color: var(--color-dark-theme) !important;
-    }
-    
-
-    /*Middle Container*/
-    #middle_con {
-    margin-top: 10px;
-    background-color: var(--color-light-theme);
-    }
-
-    #left_con > #about_head {
-        color: var(--color-mint-green);
-        padding-top: 0%;
-    }
-
-    #about_head {
-        padding-top: 0%;
-    }
-    
-    #middle_con a, #bottom_con a {
-    text-decoration: underline;
-
-    position       : static !important;
-    top            : 0 !important;
-    }
-
-
-
-    /* Footer   */
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px; /* Set the fixed height of the footer here */
-        line-height: 60px; /* Vertically center the text there */
-        background-color: #f5f5f5;
-    }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css"> 
   </head>
   <body>
     <!-- Top Container -->
-      <section id ="top_con" class="container">
-    <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg py-0 navbar-default navbar-top">
-              <span class="navbar-brand mb-0 h1">Cole Smith</span>  
-              <!-- Hamburger Menu items-->
-            <!-- Create a hamburger icon -->
-            <button id="hamburger_menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation_menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    <section id ="top_con" class="container-fluid">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md p-0">
+        <a class="navbar-brand" href="#">Cole Smith</a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#NavbarCollpase" aria-controls="NavbarCollpase" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="NavbarCollpase">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-
-              <!-- Regular Nav Items-->
-              <ul class="navbar-nav ml_auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio  </a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+    </section>
 
     <!-- Middle Containter -->
     <section id="middle_con" class="container-fluid p-2">
         <section class="row">
             <!-- Left Container -->
-            <section id="left_con" class="col-xs-12 col-md-7 col-lg-12"> 
-                <div id="about_head" class="py-0">
+            <section id="left_con" class="col-xs-12 col-md-12 col-lg-12 p-0"> 
+                <div id="about_head" class="py-0 pl-1">
                     <h1>About Me</h1>
                 </div>
                 <hr>
 
-                <section class="row">
+                <section class="row mx-0">
                     <!-- Image -->
-                    <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+                    <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4 text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="Placeholder Image">
                     </div>
 
                     <!-- Content -->
-                    <div class="col-xs-12 col-sm-8 col-md-12 col-lg-8">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                         <p>Marshmallow jello souffle pastry biscuit gummi bears tootsie roll toolsie roll ginderbread. Cotton candy mudffin gingerbread fruitcake. Sweet roll souffle topping water croissant oat cake gummi bears.</p>
 
                         <p>Jello-o cheesecake dessert fruit cake ice cream brownie liquorice souffle. Caramels bicuit gummi bears tiramisu chupa chips. Croissant macaroon cotton candy cake pudding.</p>
@@ -161,8 +67,8 @@
     </section>
       
         <footer class="footer">
-            <div class="container">
-              <span class="text-muted">	&copy; Copyright Cole Smith</span>
+            <div class="container text-center">
+              <span class="text-muted">&copy; Copyright Cole Smith</span>
             </div>
           </footer>
         
