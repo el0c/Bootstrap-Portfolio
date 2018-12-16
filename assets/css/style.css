@@ -20,9 +20,6 @@
     }
 
     @media only screen and (min-width: 768px) {
-        #middle_con {
-        width: 90%;
-        }
 
         .navbar ul li:not(:last-child) {
             border-right:1px solid grey;
@@ -53,7 +50,6 @@
 
     /*Middle Container*/
     #middle_con {
-    margin-top: 10px;
     background-color: var(--color-light-theme);
     }
 
@@ -66,12 +62,6 @@
         padding-top: 0%;
     }
     
-    #middle_con a, #bottom_con a {
-    text-decoration: underline;
-
-    position       : static !important;
-    top            : 0 !important;
-    }
 
     /* Footer   */
     .footer {

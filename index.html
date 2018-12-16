@@ -8,20 +8,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!-- Top Container -->
     <section id ="top_con" class="container-fluid">
-    <!-- NavBar -->
+    <!-- Define NavBar-->
     <nav class="navbar navbar-expand-md p-0">
+    <!-- Define NavBar Collapse Button -->        
         <a class="navbar-brand" href="#">Cole Smith</a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#NavbarCollpase" aria-controls="NavbarCollpase" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+        <!-- Apply Collapse class to NavBar -->
         <div class="collapse navbar-collapse" id="NavbarCollpase">
+        <!-- Actual NavBar Items -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -35,21 +37,20 @@
           </ul>
         </div>
       </nav>
-
     </section>
 
     <!-- Middle Containter -->
-    <section id="middle_con" class="container-fluid p-2">
+    <section id="middle_con" class="container my-2 py-2">
         <section class="row">
             <!-- Left Container -->
-            <section id="left_con" class="col-xs-12 col-md-12 col-lg-12 p-0"> 
+            <section id="left_con" class="col-xs-12 col-md-12 col-lg-12"> 
                 <div id="about_head" class="py-0 pl-1">
                     <h1>About Me</h1>
                 </div>
                 <hr>
 
-                <section class="row mx-0">
-                    <!-- Image -->
+                <section class="row">
+                    <!-- Image Align to Center of Col -->
                     <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4 text-center">
                         <img class="img-fluid" src="https://via.placeholder.com/300x300" alt="Placeholder Image">
                     </div>
@@ -66,11 +67,12 @@
        </section>
     </section>
       
-        <footer class="footer">
-            <div class="container text-center">
-              <span class="text-muted">&copy; Copyright Cole Smith</span>
-            </div>
-          </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+          <span class="text-muted">&copy; Copyright Cole Smith</span>
+        </div>
+    </footer>
         
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
